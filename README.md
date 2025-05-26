@@ -94,3 +94,28 @@ Para cada etapa:
 - Los tests deben ejecutarse correctamente
 - El código debe estar documentado
 - Se debe seguir el enfoque TDD
+
+##Etapa 1 entrega
+# Factorial
+
+## Descripción
+
+Este módulo implementa la función factorial de dos maneras:
+- Iterativa
+- Recursiva
+
+También incluye pruebas automatizadas usando `unittest`.
+
+## Instrucciones de Ejecución
+
+1. Ejecutar los tests con:
+
+```bash
+python -m unittest test_factorial.py
+
+## Ejemplo de uso
+from factorial import factorial_iterative, factorial_recursive
+
+print(factorial_iterative(5))  # 120
+print(factorial_recursive(3))  # 6
+
