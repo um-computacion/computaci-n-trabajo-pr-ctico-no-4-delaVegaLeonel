@@ -95,7 +95,10 @@ Para cada etapa:
 - El código debe estar documentado
 - Se debe seguir el enfoque TDD
 
-##Etapa 1 entrega
+
+
+
+# Etapa 1 entrega 
 # Factorial
 
 ## Descripción
@@ -112,10 +115,65 @@ También incluye pruebas automatizadas usando `unittest`.
 
 ```bash
 python -m unittest test_factorial.py
-
+``` 
 ## Ejemplo de uso
+```python
 from factorial import factorial_iterative, factorial_recursive
 
 print(factorial_iterative(5))  # 120
 print(factorial_recursive(3))  # 6
+```
+### Imagen
 
+# Etapa 2 entrega
+# Fibonacci
+
+## Descripción
+
+Este módulo implementa la secuencia de Fibonacci de dos maneras:
+- Iterativa
+- Recursiva
+
+Incluye pruebas automatizadas usando `unittest`.
+
+## Instrucciones de Ejecución
+
+Ejecutar los tests con:
+
+```bash
+python -m unittest test_fibonacci.py
+```
+
+
+## Ejemplo de uso
+```python
+from fibonacci import fibonacci_iterative, fibonacci_recursive
+
+print (fibonacci_iterative(10))   # 55
+print(fibonacci_recursive(5))    # 5
+```
+### Imagen 
+
+# Etapa 3 entrega
+# Flatten (Aplanar Listas)
+
+## Descripción
+
+Este módulo contiene una función recursiva para aplanar estructuras de datos anidadas, como listas, tuplas y diccionarios, en una lista simple.
+
+## Instrucciones de Ejecución
+
+```bash
+python -m unittest test_flatten.py
+```
+## Ejemplo de uso
+```python
+from flatten import flatten
+
+print(flatten([1, [2, 3], [4, [5, 6]]]))
+# [1, 2, 3, 4, 5, 6]
+
+print(flatten([1, (2, 3), {'a': 4, 'b': 5}, [6, [7, 8]]]))
+# [1, 2, 3, 'a', 4, 'b', 5, 6, 7, 8]
+```
+### Imagen
